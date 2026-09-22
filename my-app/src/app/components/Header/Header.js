@@ -6,12 +6,10 @@ export default function Header() {
   return (
     <header className="text-white py-4">
       <div className="w-full px-[230px] flex items-center gap-20">
-        {/* ЛОГОТИП */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <img src="/лого.svg" alt="Логотип Celestia" className="w-37" />
         </Link>
 
-        {/* НАВИГАЦИЯ */}
         <nav className="hidden md:flex items-center gap-6 text-sm text-gray-300">
           <Link
             href="/"
@@ -51,7 +49,6 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* ПРАВАЯ ЧАСТЬ (Иконки, Телефон, Кнопка) */}
         <div className="flex items-center gap-5">
           <div className="flex items-center gap-3">
             <a
