@@ -42,8 +42,12 @@ export default function Hero() {
                 за звездами
               </p>
             </div>
-            <div className="absolute bottom-6 right-6 w-12 h-12 bg-[#3805F2] rounded-full flex items-center justify-center text-white">
-              <img src="/details.svg" alt="Подробнее" className="" />
+            <div className="group absolute bottom-6 right-6 w-14 h-14 bg-[#3805F2] rounded-full flex items-center justify-center cursor-pointer transition-colors">
+              <img
+                src="/details.svg"
+                alt="Подробнее"
+                className="w-6 h-6 transition-transform duration-300 group-hover:-rotate-75"
+              />
             </div>
           </div>
 
@@ -56,8 +60,12 @@ export default function Hero() {
                 скидка пенсионерам
               </p>
             </div>
-            <div className="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#3805F2]">
-              <img src="/details-black.svg" alt="Подробнее" className="" />
+            <div className="group absolute bottom-6 right-6 w-14 h-14 bg-white rounded-full flex items-center justify-center cursor-pointer transition-colors">
+              <img
+                src="/details-black.svg"
+                alt="Подробнее"
+                className="w-6 h-6 transition-transform duration-300 group-hover:-rotate-75"
+              />
             </div>
           </div>
         </div>
