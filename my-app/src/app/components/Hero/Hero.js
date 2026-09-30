@@ -13,7 +13,7 @@ export default function Hero() {
             звёздами, лекции и многое другое
           </p>
 
-          <button className="font-benzin mt-[45] bg-[#3805F2] text-white border-2 border-[#3805F2] hover:bg-transparent hover:text-[#3805F2] active:bg-white active:text-black active:border-transparent active:shadow-[0_0_30px_rgba(56,5,242,0.8)] px-12 py-3 rounded-full text-sm font-medium transition-all duration-200 w-fit">
+          <button className="font-benzin mt-[45] bg-[#3805F2] text-white border-2 border-[#3805F2] hover:bg-transparent hover:text-[#3805F2] active:bg-white active:text-black active:border-transparent active:shadow-[0_0_30px_rgba(56,5,242,0.8)] px-12 py-3 rounded-full text-sm font-medium transition-all duration-200 w-fit cursor-pointer">
             Подробнее
           </button>
         </div>
