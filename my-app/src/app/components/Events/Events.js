@@ -48,13 +48,13 @@ export default function Events() {
       </div>
 
       <div className="flex justify-center gap-3 mb-10">
-        <button className="cursor-pointer px-6 py-2 rounded-full bg-[#3805F2] text-white text-xs font-gilroy">
+        <button className="cursor-pointer px-6 py-2 rounded-full bg-[#3805F2] text-white text-xs font-gilroy transition-colors">
           Программы
         </button>
-        <button className="cursor-pointer px-6 py-2 rounded-full border border-gray-700 text-gray-400 text-xs font-gilroy hover:border-gray-500 transition-colors">
+        <button className="cursor-pointer px-6 py-2 rounded-full border border-gray-700 text-gray-400 text-xs font-gilroy hover:border-white hover:text-white transition-colors">
           Мероприятия
         </button>
-        <button className="cursor-pointer px-6 py-2 rounded-full border border-gray-700 text-gray-400 text-xs font-gilroy hover:border-gray-500 transition-colors">
+        <button className="cursor-pointer px-6 py-2 rounded-full border border-gray-700 text-gray-400 text-xs font-gilroy hover:border-white hover:text-white transition-colors">
           Лекции
         </button>
       </div>
@@ -75,7 +75,7 @@ export default function Events() {
       </div>
 
       <div className="flex justify-center mt-10">
-        <button className="cursor-pointer w-full max-w-[700px] bg-white text-black py-4 rounded-full font-bold font-benzin text-sm hover:bg-gray-200 transition-colors">
+        <button className="cursor-pointer w-full max-w-[700px] bg-white text-black py-4 rounded-full font-bold font-benzin text-sm border-2 border-white hover:bg-[#3805F2] hover:text-white hover:border-[#3805F2] active:bg-[#2A00B8] active:border-[#2A00B8] transition-all duration-200">
           Показать еще
         </button>
       </div>

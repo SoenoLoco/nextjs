@@ -28,7 +28,7 @@ export default function EventCard({
   };
 
   return (
-    <div className="flex items-start gap-6 py-6 border-b border-gray-800/50">
+    <div className="group flex items-start gap-6 py-5 px-2 rounded-[30px] hover:bg-[#3805F2] hover:border-transparent transition-all duration-300 cursor-pointer">
       <div className="relative w-[313px] h-[159px] rounded-[30px] overflow-hidden shrink-0">
         <img src={image} alt={title} className="w-full h-full object-cover" />
         <div className="absolute top-1 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center text-xs font-bold text-black font-gilroy">
@@ -68,7 +68,7 @@ export default function EventCard({
           <div className="relative ml-auto">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="cursor-pointer px-5 py-2 rounded-full border border-gray-700 text-gray-400 text-xs font-gilroy flex items-center justify-between hover:border-gray-500 transition-colors min-w-[160px]"
+              className="cursor-pointer px-5 py-2 rounded-full border border-gray-400 text-gray-400 text-xs font-gilroy flex items-center justify-between hover:border-white hover:text-white transition-colors min-w-[160px]"
             >
               <span>{formatDate(selectedDate)}</span>
               <svg
@@ -100,7 +100,7 @@ export default function EventCard({
             )}
           </div>
 
-          <button className="cursor-pointer px-6 py-2.5 rounded-full bg-[#3805F2] hover:bg-[#2A00B8] active:scale-95 text-white text-xs font-medium font-gilroy transition-all duration-200">
+          <button className="cursor-pointer px-3.5 py-2 rounded-full bg-[#3805F2] text-white text-[10px] font-benzin border-b border-gray-800/50 border-2 hover:bg-white hover:text-black hover:border-white active:bg-[#3805F2] active:text-white active:border-white active:ring-2 active:ring-white transition-all duration-200">
             Купить билет
           </button>
         </div>
