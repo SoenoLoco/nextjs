@@ -75,7 +75,7 @@ export default function Events() {
       </div>
 
       <div className="flex justify-center mt-10">
-        <button className="cursor-pointer w-full max-w-[700px] bg-white text-black py-4 rounded-full font-bold font-benzin text-sm border-2 border-white hover:bg-[#3805F2] hover:text-white hover:border-[#3805F2] active:bg-[#2A00B8] active:border-[#2A00B8] transition-all duration-200">
+        <button className="cursor-pointer w-full max-w-[700px] bg-white text-black py-4 rounded-full font-bold font-benzin text-sm border-2 border-white hover:bg-[#3805F2] hover:text-white hover:border-[#3805F2] active:bg-[#3805F2] active:border-[#2A00B8] transition-all duration-200">
           Показать еще
         </button>
       </div>
