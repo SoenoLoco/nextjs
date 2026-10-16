@@ -25,3 +25,20 @@ body {
   --font-gilroy: var(--font-gilroy), sans-serif;
   --font-benzin: var(--font-benzin), sans-serif;
 }
+
+.photo-card-pagination .swiper-pagination-bullet,
+.absolute .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.photo-card-pagination .swiper-pagination-bullet-active,
+.absolute .swiper-pagination-bullet-active {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+}
