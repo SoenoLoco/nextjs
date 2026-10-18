@@ -50,7 +50,10 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-12 xl:px-[120px] 2xl:px-[230px] py-10 overflow-hidden">
+    <section
+      id="reviews"
+      className="w-full px-4 sm:px-6 lg:px-12 xl:px-[120px] 2xl:px-[230px] py-10 overflow-hidden"
+    >
       <div className="relative flex items-center justify-center mb-12">
         <h2 className="text-5xl font-bold text-white font-benzin tracking-wide">
           Отзывы и отметки
@@ -58,10 +61,8 @@ export default function Reviews() {
 
         <div className="absolute right-0 top-4 flex gap-2">
           <button
-            className="reviews-prev cursor-pointer w-8 h-8 rounded-full bg-white text-black flex items-center justify-center
-      hover:bg-[#3805F2] hover:text-white
-      active:bg-white active:text-[#3805F2] active:shadow-[0_0_20px_rgba(56,5,242,0.9)]
-      transition-all duration-200"
+            suppressHydrationWarning
+            className="reviews-prev cursor-pointer w-8 h-8 rounded-full bg-white text-black flex items-center justify-center transition-colors hover:bg-[#3805F2] hover:text-white active:bg-white active:text-[#3805F2]"
             aria-label="Предыдущий отзыв"
           >
             <svg
@@ -79,6 +80,7 @@ export default function Reviews() {
           </button>
 
           <button
+            suppressHydrationWarning
             className="reviews-next cursor-pointer w-8 h-8 rounded-full bg-white text-black flex items-center justify-center
       hover:bg-[#3805F2] hover:text-white
       active:bg-white active:text-[#3805F2] active:shadow-[0_0_20px_rgba(56,5,242,0.9)]

@@ -7,9 +7,9 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-export default function PhotoCard({ images = [], avatar, tags, caption }) {
+export default function PhotoCard({ images = [], avatar }) {
   const paginationRef = useRef(null);
-  const id = useId(); 
+  const id = useId();
 
   return (
     <div className="relative rounded-[40px] w-[250px] h-[370px] shrink-0 overflow-hidden">

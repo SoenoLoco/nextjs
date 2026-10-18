@@ -18,31 +18,31 @@ export default function Header() {
             Главная
           </Link>
           <Link
-            href="/events"
+            href="#events"
             className="font-gilroy hover:text-[#3805F2] transition-colors"
           >
             События
           </Link>
           <Link
-            href="/promo"
+            href="#promotions"
             className="font-gilroy hover:text-[#3805F2] transition-colors"
           >
             Акции
           </Link>
           <Link
-            href="/reviews"
+            href="#reviews"
             className="font-gilroy hover:text-[#3805F2] transition-colors"
           >
             Отзывы
           </Link>
           <Link
-            href="/faq"
+            href="#faq"
             className="font-gilroy hover:text-[#3805F2] transition-colors"
           >
             FAQ
           </Link>
           <Link
-            href="/contacts"
+            href="#booking"
             className="font-gilroy hover:text-[#3805F2] transition-colors"
           >
             Контакты

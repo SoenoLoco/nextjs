@@ -38,7 +38,7 @@ const events = [
 
 export default function Events() {
   return (
-    <section className="w-full px-[230px] py-20">
+    <section id="events" className="w-full px-[230px] py-20">
       <div className="flex items-center justify-center gap-6 mb-10">
         <img src="/star.svg" alt="" className="w-10 h-10" />
         <h2 className="text-5xl font-bold text-white font-benzin tracking-wide">

@@ -26,7 +26,7 @@ const promotions = [
 
 export default function Promotions() {
   return (
-    <section className="w-full px-[230px] py-10">
+    <section id="promotions" className="w-full px-[230px] py-10">
       <div className="relative flex items-center justify-center mb-12">
         <img src="/star.svg" alt="" className="w-10 h-10" />
         <h2 className="text-5xl font-bold text-white font-benzin tracking-wide">

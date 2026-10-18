@@ -33,7 +33,10 @@ export default function FAQ() {
   };
 
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-12 xl:px-[120px] 2xl:px-[230px] py-10">
+    <section
+      id="faq"
+      className="w-full px-4 sm:px-6 lg:px-12 xl:px-[120px] 2xl:px-[230px] py-10"
+    >
       <h2 className="text-5xl font-bold text-white font-benzin tracking-wide text-center leading-tight mb-12">
         Часто задаваемые
         <br />
