@@ -50,86 +50,34 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section
-      id="reviews"
-      className="w-full px-4 sm:px-6 lg:px-12 xl:px-[120px] 2xl:px-[230px] py-10 overflow-hidden"
-    >
-      <div className="relative flex items-center justify-center mb-12">
-        <h2 className="text-5xl font-bold text-white font-benzin tracking-wide">
-          Отзывы и отметки
-        </h2>
-
-        <div className="absolute right-0 top-4 flex gap-2">
-          <button
-            suppressHydrationWarning
-            className="reviews-prev cursor-pointer w-8 h-8 rounded-full bg-white text-black flex items-center justify-center transition-colors hover:bg-[#3805F2] hover:text-white active:bg-white active:text-[#3805F2]"
-            aria-label="Предыдущий отзыв"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <polyline points="15 18 9 12 15 6" />
-            </svg>
-          </button>
-
-          <button
-            suppressHydrationWarning
-            className="reviews-next cursor-pointer w-8 h-8 rounded-full bg-white text-black flex items-center justify-center
-      hover:bg-[#3805F2] hover:text-white
-      active:bg-white active:text-[#3805F2] active:shadow-[0_0_20px_rgba(56,5,242,0.9)]
-      transition-all duration-200"
-            aria-label="Следующий отзыв"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <polyline points="9 18 15 12 9 6" />
-            </svg>
-          </button>
+    <section id="reviews" className="py-10 lg:py-16 overflow-hidden">
+      <div className="relative flex flex-col items-center mb-8 lg:mb-12">
+        <h2 className="text-3xl lg:text-5xl font-bold text-white font-benzin tracking-wide text-center">Отзывы и отметки</h2>
+        
+        <div className="flex lg:absolute lg:right-0 lg:top-4 gap-2 mt-4 lg:mt-0">
+           <button className="hidden lg:flex reviews-prev w-8 h-8 rounded-full bg-white items-center justify-center">
+             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="15 18 9 12 15 6" /></svg>
+           </button>
+           <button className="hidden lg:flex reviews-next w-8 h-8 rounded-full bg-white items-center justify-center">
+             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="9 18 15 12 9 6" /></svg>
+           </button>
         </div>
       </div>
 
       <Swiper
         modules={[Navigation]}
-        navigation={{
-          prevEl: ".reviews-prev",
-          nextEl: ".reviews-next",
-        }}
+        navigation={{ prevEl: ".reviews-prev", nextEl: ".reviews-next" }}
         slidesPerView="auto"
-        spaceBetween={20}
+        spaceBetween={16}
         loop={true}
-        style={{ paddingBottom: "1rem" }}
+        className="!pb-4 lg:!pb-0"
       >
         {reviews.map((item, index) => (
-          <SwiperSlide key={index} style={{ width: "auto" }}>
+          <SwiperSlide key={index} className="!w-[260px] lg:!w-auto">
             {item.type === "photo" ? (
-              <PhotoCard
-                images={item.images}
-                avatar={item.avatar}
-                tags={item.tags}
-                caption={item.caption}
-              />
+              <PhotoCard images={item.images} avatar={item.avatar} />
             ) : (
-              <ReviewCard
-                avatar={item.avatar}
-                name={item.name}
-                role={item.role}
-                text={item.text}
-              />
+              <ReviewCard avatar={item.avatar} name={item.name} role={item.role} text={item.text} />
             )}
           </SwiperSlide>
         ))}

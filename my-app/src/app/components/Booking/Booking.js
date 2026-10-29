@@ -110,7 +110,7 @@ export default function Booking() {
                 </button>
 
                 {isCalendarOpen && (
-                  <div className="absolute top-full left-0 mt-2 bg-[#1A1A1A] border border-gray-700 rounded-2xl p-3 z-50 shadow-lg">
+                  <div className="fixed inset-0 m-auto w-[320px] h-fit bg-[#1A1A1A] border border-gray-700 rounded-[30px] p-4 z-[100] shadow-2xl sm:absolute sm:top-full sm:left-0 sm:inset-auto sm:mt-2 sm:w-auto sm:p-3 sm:rounded-2xl sm:z-50">
                     <DayPicker
                       mode="single"
                       selected={formData.date}

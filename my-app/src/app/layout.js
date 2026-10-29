@@ -36,9 +36,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ru" className={`${gilroy.variable} ${benzin.variable}`}>
-      <body className="flex flex-col min-h-screen bg-[#131313]">
+      <body className="flex flex-col min-h-screen bg-[#131313] overflow-x-hidden">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16 xl:px-24">{children}</main>
         <Footer />
       </body>
     </html>
