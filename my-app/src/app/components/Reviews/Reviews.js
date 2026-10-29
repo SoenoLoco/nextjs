@@ -112,10 +112,10 @@ export default function Reviews() {
         slidesPerView="auto"
         spaceBetween={20}
         loop={true}
-        className="!pb-4"
+        style={{ paddingBottom: "1rem" }}
       >
         {reviews.map((item, index) => (
-          <SwiperSlide key={index} className="!w-auto">
+          <SwiperSlide key={index} style={{ width: "auto" }}>
             {item.type === "photo" ? (
               <PhotoCard
                 images={item.images}

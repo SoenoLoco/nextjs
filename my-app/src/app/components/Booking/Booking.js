@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { DayPicker } from "react-day-picker";
 import { ru } from "date-fns/locale";
-import "react-day-picker/dist/style.css";
+import 'react-day-picker/style.css';
 
 export default function Booking() {
   const [formData, setFormData] = useState({
@@ -125,8 +125,8 @@ export default function Booking() {
               {/* Кнопка отправки */}
               <button
                 type="submit"
-                className="cursor-pointer w-full bg-[#3805F2] text-white py-3.5 rounded-full font-benzin text-sm hover:bg-[#2A00B8] active:scale-[0.99] transition-all duration-200 mt-2"
-              >
+                className="cursor-pointer w-full bg-[#3805F2] text-white py-3.5 rounded-full font-benzin text-sm border-2 border-[#3805F2] hover:bg-white hover:text-black hover:border-white active:bg-[#3805F2] active:text-white active:border-[#3805F2] transition-all duration-200 mt-2"
+                >
                 Отправить
               </button>
             </form>

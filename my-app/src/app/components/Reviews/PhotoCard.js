@@ -21,7 +21,7 @@ export default function PhotoCard({ images = [], avatar }) {
       <Swiper
         modules={[Autoplay, Pagination]}
         pagination={{
-          el: `#pagination-${id}`,
+          el: `#pagination-${id.replace(/:/g, "")}`,
           clickable: true,
         }}
         autoplay={{
@@ -30,7 +30,7 @@ export default function PhotoCard({ images = [], avatar }) {
         }}
         loop={true}
         slidesPerView={1}
-        className="!absolute !inset-0 !w-full !h-full"
+        style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
       >
         {images.map((img, index) => (
           <SwiperSlide key={index} className="!w-full !h-full">

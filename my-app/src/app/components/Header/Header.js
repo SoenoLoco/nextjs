@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="text-white py-4">
+    <header className="sticky top-0 z-50 bg-[#0a0a0a] text-white py-4">
       <div className="w-full px-[224px] flex items-center gap-20">
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <img src="/лого.svg" alt="Логотип Celestia" className="w-37" />
